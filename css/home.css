@@ -10,17 +10,17 @@ h1 {
 }
 #parametres {
     position: absolute;
-    top: 20px; left: 90%;
+    top: 3%; left: 90%;
     background-color: #09042a;
     border-color: transparent;
-    width: 50px;
-    height: 50px;
+    width: 7.5%;
+    height: 7.5%;
 }
 #message {
   position: absolute;
-  top: 20px; left: 80%;
+  top: 3%; left: 80%;
   background-color: #09042a;
   border-color: transparent;
-  width: 50px;
-  height: 50px;
+  width: 7.5%;
+  height: 7.5%;
 }
