@@ -1,0 +1,42 @@
+body {
+    background: #09042a;
+}
+h1 {
+    color: violet;
+    font-size: 80px;
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: underline #09042a;
+}
+#parametres {
+    position: absolute;
+    top: 20px; left: 90%;
+    background-color: #09042a;
+    border-color: transparent;
+    width: 50px;
+    height: 50px;
+}
+#message {
+  position: absolute;
+  top: 20px; left: 80%;
+  background-color: #09042a;
+  border-color: transparent;
+  width: 50px;
+  height: 50px;
+}
+#chat1 {
+    position: absolute;
+    top: 85%; left: 5%;
+    width: 90%;
+    height: 10%;
+    background-color: gray;
+    border-radius: 30px;
+}
+#chat2 {
+    position: absolute;
+    top: 85.5%; left: 5.25%;
+    width: 89.5%;
+    height: 9%;
+    background-color: #09042a;
+    border-radius: 28px;
+}
