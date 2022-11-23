@@ -1,0 +1,65 @@
+body {
+    background: #09042a;
+}
+
+nav.menu ul li.btn a{
+    text-decoration: none;
+    background-color: #09042a;
+    padding: 10px;
+    color: violet;
+    font-size: 50px;
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: underline #09042a;
+}
+
+nav.menu ul li.btn {
+    list-style-type: none;
+    display: inline-block;
+}
+
+div.menu {
+    height: 20px;
+}
+
+p, h1, h2 {
+    color: mediumpurple;
+}
+
+h1.welcome{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: darkslateblue;
+    font-size: 40px;
+    text-decoration: none;
+    background-color: #09042a;
+    text-decoration: #09042a;
+}
+
+h1.nebula{
+    text-decoration: none;
+    background-color: #09042a;
+    color: violet;
+    font-size: 90px;
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: underline #09042a;
+}
+
+footer {
+    background-color: rgb(33, 2, 54);
+    vertical-align: bottom;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #09042a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #eebbc3;
+    border-radius: 10px;
+}

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nebula</title>
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/connexion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body>
     <!-- Haut de page -->
     <header>
-        <p>Connexion à Nebula</p>
+        <p>Connexion / Inscription</p>
     </header>
 
     <!-- Menu de navigation -->
@@ -28,21 +28,32 @@
     <div class="menu"></div>
 
     <!-- Contenu sous forme de boite -->
-    <div id="content">
-        <div class="leftbox">
-            <div class="welcome">
-                <h1>Nebula</h1>
-                <p>Bienvenue sur Nebula</p>
-            </div>
-            <div class="exemple">
-                <h1>Exemple</h1>
-            </div>
-        </div>
-        <div class="rightbox">
-            <p>En cours de traitement</p>
-        </div>
-    </div>
-    <div class="test"></div>
+    <h1 class="welcome">Bienvenue !!!</h1>
+    <h1 class="nebula">Nebula</h1>
+
+    <p>Nom : <?= '$pseudo'; ?></p>
+    <p>Email : <?= '$email'; ?></p>
+    <p>Age = <?= '$age'; ?></p>
+
+    <form method="post">
+        <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo" required>
+        <input type="text" name="age" id="age" placeholder="Age" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="submit" name="formsend" id="formsend">
+    </form>
+
+    <?php
+        if(isset($_POST['formsend'])){
+            $pseudo = $_POST['pseudo'];
+            $age = $_POST['age'];
+            $email = $_POST['email'];
+            if(!empty($pseudo) && !empty($age) && !empty($email)){
+                echo "Votre pseudo : ".$_POST['pseudo'];
+                echo "Votre age : ".$_POST['age'];
+                echo "Votre email : ".$_POST['email'];
+            }
+        }
+    ?>
 
     <!-- Pied de page -->
     <footer>

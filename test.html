@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Nom : <?= '$pseudo'; ?></p>
+    <p>Email : <?= '$email'; ?></p>
+    <p>Age = <?= '$age'; ?></p>
+
+    <form method="post">
+        <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo" required>
+        <input type="text" name="age" id="age" placeholder="Age" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="submit" name="formsend" id="formsend">
+    </form>
+
+    <?php
+        if(isset($_POST['formsend'])){
+            $pseudo = $_POST['pseudo'];
+            $age = $_POST['age'];
+            $email = $_POST['email'];
+            if(!empty($pseudo) && !empty($age) && !empty($email)){
+                echo "Votre pseudo : ".$_POST['pseudo'];
+                echo "Votre age : ".$_POST['age'];
+                echo "Votre email : ".$_POST['email'];
+            }
+        }
+    ?>
+</body>
+</html>

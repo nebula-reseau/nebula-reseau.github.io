@@ -1,28 +1,25 @@
 body {
     background: #09042a;
 }
-h1 {
+
+nav.menu ul li.btn a{
+    text-decoration: none;
+    background-color: #09042a;
+    padding: 10px;
     color: violet;
-    font-size: 80px;
+    font-size: 50px;
     font-family: 'Lobster', Arial, Helvetica, sans-serif;
     text-align: center;
     text-decoration: underline #09042a;
 }
-#parametres {
-    position: absolute;
-    top: 3%; left: 90%;
-    background-color: #09042a;
-    border-color: transparent;
-    width: 7.5%;
-    height: 7.5%;
+
+nav.menu ul li.btn {
+    list-style-type: none;
+    display: inline-block;
 }
-#message {
-  position: absolute;
-  top: 3%; left: 80%;
-  background-color: #09042a;
-  border-color: transparent;
-  width: 7.5%;
-  height: 7.5%;
+
+div.menu {
+    height: 20px;
 }
 #chat1 {
     position: absolute;
